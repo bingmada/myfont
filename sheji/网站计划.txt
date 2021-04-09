@@ -1,0 +1,13 @@
+1、简历模块：
+	数据库字段：起始时间starttime，结束时间endtime，company，project，pro_technology,pro_position,pro_content,pro_starttime,pro_endtime,
+	t_resume
+	t_user
+	t_
+	
+	
+2、学习记录模块
+	userid
+	用户可自行设置添加标签
+	标题字段
+	content
+	

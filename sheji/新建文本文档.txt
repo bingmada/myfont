@@ -1,0 +1,4 @@
+https://cloud.tencent.com/developer/article/1576599 django 快速搭建
+
+
+https://www.cnblogs.com/han-1034683568/p/13875663.html 移动端

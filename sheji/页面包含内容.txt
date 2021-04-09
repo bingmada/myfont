@@ -1,0 +1,8 @@
+1\工作简历的单独索引
+2、首页，首页的话就是简介明了，各个模块左右交错
+3、模块包括哪些：
+	新媒体模块：将b站的视频连接连接进来
+	学习的知识点模块： python（flask，websocket，django，scrapyd） 前端（vue，node， electron），数据库（mysql，mogodb，es，redis）镜像，docker
+	留言模块：可以让朋友留言给你
+4、样式切换，一开始写前端的时候就要提取所有的css，不能写死
+5、推荐给访问我网站朋友的常用工作链接

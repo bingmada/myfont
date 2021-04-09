@@ -1,0 +1,26 @@
+const getters = {
+  requestLoading: state => state.app.requestLoading,
+  searchHistory: state => state.app.searchHistory,
+  importStep: state => state.app.importStep,
+  firstForm: state => state.app.firstForm,
+  secondList: state => state.app.secondList,
+  thirdData: state => state.app.thirdData,
+  thirdFiled: state => state.app.thirdFiled,
+  fourthData: state => state.app.fourthData,
+  fifthForm: state => state.app.fifthForm,
+  secondData: state => state.app.secondData,
+  fieldDict: state => state.common.fieldDict,
+  indexDict: state => state.common.indexDict,
+  sourceTypeDict: state => state.common.sourceTypeDict,
+  indexSelect: state => state.common.indexSelect,
+  fieldSelect: state => state.common.fieldSelect,
+  sourceSelect: state => state.common.sourceSelect,
+  countrySelect: state => state.common.countrySelect,
+  token: state => state.user.token,
+  username: state => state.user.username,
+  role: state => state.user.role,
+  overtime: state => state.user.overtime,
+  permission_routers: state => state.permission.routers,
+  addRouters: state => state.permission.addRouters
+}
+export default getters
