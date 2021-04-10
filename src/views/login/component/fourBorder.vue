@@ -27,7 +27,7 @@ $left-width: 279px;
         position: absolute;
         top: 0;
         left: 0;
-        animation: showRT 1.2s;
+        animation: showRT 2s;
         animation-fill-mode: forwards;
     }
     @keyframes showRT
@@ -39,7 +39,7 @@ $left-width: 279px;
         position: absolute;
         top: 0;
         left: -4px;
-        animation: showLB 1.2s;
+        animation: showLB 2s;
         animation-fill-mode: forwards;
     }
     @keyframes showLB
@@ -51,7 +51,7 @@ $left-width: 279px;
         position: absolute;
         top: 0;
         left: 0;
-        animation: showRB 1.2s;
+        animation: showRB 2s;
         animation-fill-mode: forwards;
     }
      @keyframes showRB

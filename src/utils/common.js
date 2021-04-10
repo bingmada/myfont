@@ -1,19 +1,3 @@
-/** 字段中文名称转换表 */
-export const fieldNameDict = {
-  phoneNumber: '手机号码',
-  phoneCode: '手机区号',
-  phoneImsi: '手机IMSI号',
-  cardId: '证件号',
-  registerTime: '注册时间',
-  version: '版本',
-  full_username: '名称',
-  username: '姓名',
-  email: '邮箱',
-  birthday: '生日',
-  sex: '性别',
-  nickname: '昵称'
-}
-
 export const pickerOptions = {
   shortcuts: [{
     text: '最近一周',

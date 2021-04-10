@@ -57,12 +57,12 @@
         height: 100%;
         margin-right: 20px;
         overflow: auto;
-        @include webkit-scrollbar1;
+        @include webkit-scrollbar;
         .left-p{
             margin: 0;
         }
         .key-span{
-            // color: $level1_color
+            // color: $main_font_color
         }
         .left-span{
             top: -5px;
@@ -70,7 +70,7 @@
         }
     }
     .value-span{
-        color: $level1_color
+        color: $main_font_color
     }
     .this_button{
         position: absolute;
@@ -85,7 +85,7 @@
         .right-div{
             overflow: auto;
             height: 100%;
-            @include webkit-scrollbar1;
+            @include webkit-scrollbar;
             p{
                 margin: 0;
             }
@@ -100,7 +100,7 @@
         pre{
             overflow: auto;
             height: 100%;
-            @include webkit-scrollbar1;
+            @include webkit-scrollbar;
             margin: 0 0 40px 0;
         }
     }

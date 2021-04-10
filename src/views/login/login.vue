@@ -4,9 +4,8 @@
     <img class="bottom-img common_position" src="../../assets/img/bottom.png" alt="">
     <div class="center">
       <img class="center-img1" src="../../assets/img/logo2.png" alt="">
-      <img class="center-img2" src="../../assets/img/logo3.png" alt="">
     </div>
-    <span class="login-title common_position">社工库检索平台</span>
+    <span class="login-title common_position">个人记录网站</span>
     <transition enter-active-class="animated fadeIn" v-if="!overtime">
       <el-form class="login-form common_position" autoComplete="on" :model="loginForm" ref="loginForm" label-position="left">
         <el-form-item prop="username">
@@ -46,7 +45,8 @@ $dark_gray:#889aa4;
 $light_gray:#eee;
 .login-container {
   text-align: center;
-  background: url('../../assets/img/9.jpg') center center;
+  // background: url('../../assets/img/background.png') center center;
+  background: url('../../assets/img/background.jpg') center center;
   background-size: cover;
   position: fixed;
   height: 100%;
@@ -72,9 +72,9 @@ $light_gray:#eee;
     height: 600px;
     .center-img1{
       position: absolute;
-      top: 0;
-      left: 0;
-      width: 600px;
+      top: -21px;
+      left: 11px;
+      width: 571px;
       animation: rotation 15s linear infinite;
       -moz-animation: rotation 15s linear infinite;
       -webkit-animation: rotation 15s linear infinite;
@@ -83,20 +83,6 @@ $light_gray:#eee;
     @-webkit-keyframes rotation{
       from {-webkit-transform: rotate(0deg);}
       to {-webkit-transform: rotate(360deg);}
-    }
-    .center-img2{
-      position: absolute;
-      top: 100px;
-      left: 100px;
-      width: 400px;
-      // animation: rotation1 15s linear infinite;
-      // -moz-animation: rotation1 15s linear infinite;
-      // -webkit-animation: rotation1 15s linear infinite;
-      // -o-animation: rotation1 15s linear infinite;
-    }
-    @-webkit-keyframes rotation1{
-      from {-webkit-transform: rotate(360deg);}
-      to {-webkit-transform: rotate(0deg);}
     }
   }
   .login-title{
@@ -116,7 +102,7 @@ $light_gray:#eee;
       display: inline-block;
       width: 25px;
       height: 50px;
-      animation: WidthChange 1.2s;
+      animation: WidthChange 2s;
       animation-fill-mode: forwards;
     }
     @keyframes WidthChange
@@ -126,10 +112,6 @@ $light_gray:#eee;
     }
     /deep/.el-input{
       top: 7px;
-      .el-input__inner{
-        // background: transparent;
-        // color: #ffffff;
-      }
     }
   }
   .svg-container {

@@ -2,10 +2,10 @@
   <div class="main-div">
     <el-button class="export-button" v-if="inAnimation" size="mini" type="success" slot="append" icon="el-icon-download" @click="exportVisible=true">导出数据</el-button>
     <div class='dashboard' :class="inAnimation ? 'Anim': ''">
-      <p class="logo-p">
+      <!-- <p class="logo-p">
         <img class="logo1" src="../../assets/img/logo3.png" alt="">
         <img class="logo2" src="../../assets/img/logo4.png" alt="">
-      </p>
+      </p> -->
       <p>
         <el-input placeholder="请输入内容" v-model="searchContent" class="input-with-select" @keyup.enter.native="searchFunction">
           <el-select v-model="searchSelect" slot="prepend" placeholder="请选择" @change="selectChangeDef">
@@ -212,11 +212,11 @@
     }
     p{
       .history{
-        color: $main_font_color1;
+        color: $main_font_color;
         float: right;
         position: relative;
         top: -2px;
-        border-bottom: 1px solid $main_font_color1;
+        border-bottom: 1px solid $main_font_color;
         &:hover{
           cursor: pointer;
         }

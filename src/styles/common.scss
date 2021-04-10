@@ -1,22 +1,6 @@
-$main-color: #003366;
-
-$menu_font_color: #ffffff;
-$menu_hover_font_color: #ffffff;
-$menu_active_font_color: #ffffff;
-
-$top_background_color: rgba(2,7,18,1);
-
-$left_background_color: #000000;
-
+$top_background_color: #ffffff;
+$main-color: #ffffff;
 $main_font_color: #ffffff;
-$main_font_color1: #cccccc;
-$level1_color: #AAAAAA;
-$level2_color: #999999;
-
-$active-background-color: #2d2d2d;
-$active-background-color1: #3A7BFF;
-$border-color: #545454;
-$border: 1px solid $border-color;
 
 $danger_color: #d43131;
 $primary_color: #409eff;
@@ -52,18 +36,6 @@ $warning-color: #dc8400;
     &::-webkit-scrollbar {
         width: 6px; // 横向滚动条
         height: 6px; // 纵向滚动条 必写
-    }
-    &::-webkit-scrollbar-thumb {
-        background-color: #ddd;
-        border-radius: 3px;
-    }
-}
-
-
-@mixin webkit-scrollbar1{
-    &::-webkit-scrollbar {
-        width: 2px; // 横向滚动条
-        height: 2px; // 纵向滚动条 必写
     }
     &::-webkit-scrollbar-thumb {
         background-color: #ddd;

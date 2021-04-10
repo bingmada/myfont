@@ -126,7 +126,7 @@
         }
         .detail-span{
             width: calc(100% - 265px);
-            color: $level1_color;
+            color: $main_font_color;
             @include text-overflow-ellipsis;
             display: inline-block;
             position: absolute;
@@ -136,8 +136,8 @@
         // }
         .title-span{
             float: right;
-            // border-bottom: 1px solid $level1_color;
-            color: $level2_color;
+            // border-bottom: 1px solid $main_font_color;
+            color: $main_font_color;
             &:hover{
             cursor: pointer;
             color: #FFD048;
@@ -159,16 +159,16 @@
         margin-bottom: 0px;
     }
     /deep/.el-form-item__label{
-      color: $level2_color;
+      color: $main_font_color;
     }
     /deep/.el-input__inner{
       padding: 0 5px;
-      border:1px solid $level1_color;
+      border:1px solid $main_font_color;
     }
     /deep/.el-textarea__inner{
         color: #ffffff;
         background-color: transparent;
-        border:1px solid $level1_color;
+        border:1px solid $main_font_color;
     }
     .remove-i{
         color: red;

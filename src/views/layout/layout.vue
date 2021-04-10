@@ -54,20 +54,6 @@ export default {
     }
   },
   created () {
-    // console.log(this.$route)
-    // this.$router.push('/')
-    // if (window.location.href.indexOf('wksidhcuekksj/') === -1) {
-    //   this.$router.push('/404')
-    // }
-    // if (sessionStorage.getItem('searchStore')) { // 在页面加载时读取sessionStorage里的状态信息
-    //   this.$store.replaceState(
-    //     Object.assign(
-    //       {},
-    //       this.$store.state,
-    //       JSON.parse(sessionStorage.getItem('searchStore'))
-    //     )
-    //   )
-    // }
     window.addEventListener('beforeunload', () => { // 在页面刷新时将vuex里的信息保存到sessionStorage里
       sessionStorage.setItem('searchStore', JSON.stringify(this.$store.state))
     })
@@ -107,14 +93,13 @@ export default {
 @import '@/styles/common.scss';
 .app-wrapper{
   height: 100%;
-  background: url('../../assets/img/9.jpg') top center no-repeat;
+  // background: url('../../assets/img/9.jpg') top center no-repeat;
   background-size: cover;
   background-attachment: fixed;
   /deep/.header {
     height: 60px;
     line-height: 60px;
     background:  $top_background_color;
-    // background: rgba(58,123,255,.4);
     box-shadow: 0 2px 5px $main-color;
     .title{
         float: left;
@@ -129,14 +114,14 @@ export default {
         // margin-left: 250px;
         border-bottom: 0;
         .el-submenu__title{
-            color: $menu_font_color;
+            color: $main_font_color;
             &:hover {
                 background-color: transparent !important;
                 color: #FFD048;
             }
         }
         .el-menu-item{
-          color: $menu_font_color;
+          color: $main_font_color;
           &:hover {
             color: #FFD048 !important;
           }
@@ -163,10 +148,10 @@ export default {
     background-color: #000 !important;
   }
   .el-menu--popup>.el-menu-item {
-      color: $menu_font_color;
+      color: $main_font_color;
   }
   .el-menu-item {
-    color: $menu_font_color;
+    color: $main_font_color;
     &:hover {
         background-color: transparent !important;
         color: #FFD048 !important;

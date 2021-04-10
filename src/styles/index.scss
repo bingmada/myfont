@@ -6,243 +6,241 @@ html, body, #app, .el-container{
 
 body{
     min-width: 1250px;
-    // font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
     font-size: 13px;
     padding: 0;
     margin: 0;
-    // background: $body_background_color;
-    // @include text-overflow-ellipsis;
-    /deep/.el-pagination{
-        .el-pagination__total{
-            color: $main_font_color;
-        }
-        .el-pagination__jump{
-            color: $main_font_color;
-        }
-    }
-    .el-button{
-        &:hover{
-            transform: scale(1.2);
-            -webkit-transform: scale(1.2);
-        }
-    }
-    .el-table--border{
-        border: 0;
-        &::after{
-            width: 0
-        }
-    }
-    .my-table{
-        .gutter{
-            display: none;
-        }
-        &::before{
-            height: 0
-        }
-        font-size: 12px;
-        background-color: rgba(#000000, .2);
-        color: #DCDFE6;
-        thead{
-            color: $main_font_color;
-        }
-        td,th{
-            padding: 6px 0;
-            // border: 0;
-            // border-right: $border;
-        }
-        th{
-            border-top: $border;
-        }
-        th,tr{
-            background-color: transparent;
-        }
-        .el-table__body tr:hover>td{
-            background-color:$active-background-color;
-        }
-        th.is-leaf{
-            border-bottom: $border;
-        }
-        td{
-            border-bottom: $border;
-        }
-        // &::before{
-        //     background-color: $border-color;
-        // }
-        // .el-table__body tr.current-row>td{
-        //     background: $active-background-color;
-        // }
-        // .el-table--enable-row-hover .el-table__body tr:hover>td{
-        //     background: $active-background-color;
-        // }
-        // .el-table__expand-icon{
-        //     color: #fff;
-        // }
-        // .el-table__expanded-cell{
-        //     background: rgba($color: $main-color, $alpha: .8);
-        // }
-        .el-table__body-wrapper::-webkit-scrollbar {
-            width: 6px; // 横向滚动条
-            height: 6px; // 纵向滚动条 必写
-        }
-        .el-table__body-wrapper::-webkit-scrollbar-thumb {
-            background-color: #ddd;
-            border-radius: 3px;
-        }
-        // .el-table--striped .el-table__body tr.el-table__row--striped td{
-        //     background: rgba($color: #9B9EB8, $alpha: .2);
-        // }
-    }
-    .my-input{
-        width: 250px;
-        margin-right: 10px;
-        .el-input__inner{
-            background: transparent;
-            color: $main_font_color;
-        }
-    }
-    .my-pagination{
-        position: absolute;
-        bottom: 20px;
-        right: 20px;
-    }
-    .my-pagination1{
-        position: absolute;
-        bottom: 0;
-        right: 0;
-    }
-    .import-step{
-        padding: 20px;
-        .title_p{
-            font-size: 20px;
-        }
-        .middle-p{
-            margin: 0;
-            height: 41px;
-        }
-        .bottom{
-            position: absolute;
-            bottom: 20px;
-            // float: right;
-        }
-        .middle{
-            padding: 20px;
-            .middle-top{
-                position: absolute;
-                right: 40px;
-                top: 70px;
-            }
-        }
-        .el-form{
-            .el-form-item__label{
-                color: $main_font_color;
-            }
-        }
-        .el-radio{
-            .el-radio__label{
-                color: $main_font_color;
-            }
-        }
-        .el-input{
-            .el-input__inner{
-                background: transparent;
-                color: $main_font_color;
-            }
-        }
-        .version-input{
-            width: 200px;
-            margin-left: 20px;
-        }
-    }
-    .my-select{
-        .el-input__inner{
-            color: #ffffff;
-            background-color: transparent;
-        }
-        .el-select-dropdown{
-            background: rgba(#000000, 1);
-            border-color: #545454;
-            .el-select-dropdown__item{
-                color: $main_font_color;
-            }
-            .el-select-dropdown__item.hover, .el-select-dropdown__item:hover{
-                background: #2d2d2d;
-            }    
-        }
-        .el-popper[x-placement^=bottom] .popper__arrow{
-            border-bottom-color: #545454;
-            &::after{
-                border-bottom-color: transparent; 
-            }
-        }
-        .el-popper[x-placement^=top] .popper__arrow{
-            border-top-color: #545454;
-            &::after{
-                border-top-color: transparent; 
-            }
-        }
-    }
-    .my-drawer{
-        .el-drawer{
-            background: rgba(#000000, 1);
-            border: 0;
-            .el-drawer__header{
-                height: 20px;
-                color: $main_font_color;
-                font-size: 20px;
-                font-weight: 800;
-                padding: 20px 20px 20px;
-                border-bottom: 1px solid $level1_color;
-            }
-        }
-    }
-    .my-tabs{
-        .el-tabs__item{
-            width: 130px;
-            color: $main_font_color;
-            text-align: center;
-        }
-        .el-tabs__item.is-active{
-            color: #ffd04b;
-        }
-        .el-tabs__active-bar{
-            // width: 100px;
-            // height: 2px;
-            background-color: #ffd04b;
-        }
-        .el-tabs__nav-wrap::after{
-            background-color: #545454;
-        }
-        .el-tabs__content{
-            @include webkit-scrollbar;
-        }
-    }
-    .my-date-picker{
-        .el-input__inner{
-            margin-right: 10px;
-            background: transparent;
-            color: $main_font_color;
-        }
-        .el-input__icon{
-            display: none;
-        }
-    }
-    /deep/.el-date-picker{
-        background: black;
-        border-color: #545454;
-        .el-date-table th{
-            border-bottom: solid 1px #545454;
-        }
-        .el-date-picker__header--bordered{
-            border-bottom: solid 1px #545454;
-        }
-        .popper__arrow{
-            border-bottom-color: #545454 !important;
-            &::after{
-                border-bottom-color: transparent !important;
-            }
-        }
-    }
 }
 :focus {
     outline: 0;
 }
+
+// /deep/.el-pagination{
+//     .el-pagination__total{
+//         color: $main_font_color;
+//     }
+//     .el-pagination__jump{
+//         color: $main_font_color;
+//     }
+// }
+// .el-button{
+//     &:hover{
+//         transform: scale(1.2);
+//         -webkit-transform: scale(1.2);
+//     }
+// }
+// .el-table--border{
+//     border: 0;
+//     &::after{
+//         width: 0
+//     }
+// }
+// .my-table{
+//     .gutter{
+//         display: none;
+//     }
+//     &::before{
+//         height: 0
+//     }
+//     font-size: 12px;
+//     background-color: rgba(#000000, .2);
+//     color: #DCDFE6;
+//     thead{
+//         color: $main_font_color;
+//     }
+//     td,th{
+//         padding: 6px 0;
+//         // border: 0;
+//         // border-right: $border;
+//     }
+//     th{
+//         border-top: $border;
+//     }
+//     th,tr{
+//         background-color: transparent;
+//     }
+//     .el-table__body tr:hover>td{
+//         background-color:$active-background-color;
+//     }
+//     th.is-leaf{
+//         border-bottom: $border;
+//     }
+//     td{
+//         border-bottom: $border;
+//     }
+//     // &::before{
+//     //     background-color: $border-color;
+//     // }
+//     // .el-table__body tr.current-row>td{
+//     //     background: $active-background-color;
+//     // }
+//     // .el-table--enable-row-hover .el-table__body tr:hover>td{
+//     //     background: $active-background-color;
+//     // }
+//     // .el-table__expand-icon{
+//     //     color: #fff;
+//     // }
+//     // .el-table__expanded-cell{
+//     //     background: rgba($color: $main-color, $alpha: .8);
+//     // }
+//     .el-table__body-wrapper::-webkit-scrollbar {
+//         width: 6px; // 横向滚动条
+//         height: 6px; // 纵向滚动条 必写
+//     }
+//     .el-table__body-wrapper::-webkit-scrollbar-thumb {
+//         background-color: #ddd;
+//         border-radius: 3px;
+//     }
+//     // .el-table--striped .el-table__body tr.el-table__row--striped td{
+//     //     background: rgba($color: #9B9EB8, $alpha: .2);
+//     // }
+// }
+// .my-input{
+//     width: 250px;
+//     margin-right: 10px;
+//     .el-input__inner{
+//         background: transparent;
+//         color: $main_font_color;
+//     }
+// }
+// .my-pagination{
+//     position: absolute;
+//     bottom: 20px;
+//     right: 20px;
+// }
+// .my-pagination1{
+//     position: absolute;
+//     bottom: 0;
+//     right: 0;
+// }
+// .import-step{
+//     padding: 20px;
+//     .title_p{
+//         font-size: 20px;
+//     }
+//     .middle-p{
+//         margin: 0;
+//         height: 41px;
+//     }
+//     .bottom{
+//         position: absolute;
+//         bottom: 20px;
+//         // float: right;
+//     }
+//     .middle{
+//         padding: 20px;
+//         .middle-top{
+//             position: absolute;
+//             right: 40px;
+//             top: 70px;
+//         }
+//     }
+//     .el-form{
+//         .el-form-item__label{
+//             color: $main_font_color;
+//         }
+//     }
+//     .el-radio{
+//         .el-radio__label{
+//             color: $main_font_color;
+//         }
+//     }
+//     .el-input{
+//         .el-input__inner{
+//             background: transparent;
+//             color: $main_font_color;
+//         }
+//     }
+//     .version-input{
+//         width: 200px;
+//         margin-left: 20px;
+//     }
+// }
+// .my-select{
+//     .el-input__inner{
+//         color: #ffffff;
+//         background-color: transparent;
+//     }
+//     .el-select-dropdown{
+//         background: rgba(#000000, 1);
+//         border-color: #545454;
+//         .el-select-dropdown__item{
+//             color: $main_font_color;
+//         }
+//         .el-select-dropdown__item.hover, .el-select-dropdown__item:hover{
+//             background: #2d2d2d;
+//         }    
+//     }
+//     .el-popper[x-placement^=bottom] .popper__arrow{
+//         border-bottom-color: #545454;
+//         &::after{
+//             border-bottom-color: transparent; 
+//         }
+//     }
+//     .el-popper[x-placement^=top] .popper__arrow{
+//         border-top-color: #545454;
+//         &::after{
+//             border-top-color: transparent; 
+//         }
+//     }
+// }
+// .my-drawer{
+//     .el-drawer{
+//         background: rgba(#000000, 1);
+//         border: 0;
+//         .el-drawer__header{
+//             height: 20px;
+//             color: $main_font_color;
+//             font-size: 20px;
+//             font-weight: 800;
+//             padding: 20px 20px 20px;
+//             border-bottom: 1px solid $level1_color;
+//         }
+//     }
+// }
+// .my-tabs{
+//     .el-tabs__item{
+//         width: 130px;
+//         color: $main_font_color;
+//         text-align: center;
+//     }
+//     .el-tabs__item.is-active{
+//         color: #ffd04b;
+//     }
+//     .el-tabs__active-bar{
+//         // width: 100px;
+//         // height: 2px;
+//         background-color: #ffd04b;
+//     }
+//     .el-tabs__nav-wrap::after{
+//         background-color: #545454;
+//     }
+//     .el-tabs__content{
+//         @include webkit-scrollbar;
+//     }
+// }
+// .my-date-picker{
+//     .el-input__inner{
+//         margin-right: 10px;
+//         background: transparent;
+//         color: $main_font_color;
+//     }
+//     .el-input__icon{
+//         display: none;
+//     }
+// }
+// /deep/.el-date-picker{
+//     background: black;
+//     border-color: #545454;
+//     .el-date-table th{
+//         border-bottom: solid 1px #545454;
+//     }
+//     .el-date-picker__header--bordered{
+//         border-bottom: solid 1px #545454;
+//     }
+//     .popper__arrow{
+//         border-bottom-color: #545454 !important;
+//         &::after{
+//             border-bottom-color: transparent !important;
+//         }
+//     }
+// }

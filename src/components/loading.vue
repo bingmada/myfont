@@ -1,7 +1,7 @@
 <template>
     <div class="background">
         <div class="beat-content">
-            <img class="beat-img" width="70" src="../assets/img/logo.png" alt="">
+            <img class="beat-img" width="70" src="../assets/img/loading.png" alt="">
         </div>
     </div>
 </template>
